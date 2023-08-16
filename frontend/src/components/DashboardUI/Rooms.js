@@ -1,6 +1,6 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { Link as ScrollLink } from "react-scroll";
+import React from "react"
+import { Link } from "react-router-dom"
+import { Link as ScrollLink } from "react-scroll"
 
 export default function Rooms() {
   const rooms = [
@@ -8,7 +8,7 @@ export default function Rooms() {
       first_image:
         "https://res2.weblium.site/res/5d6521c1b173b6002449a088/5d663bae7a1f8a0024c4ca46_optimized_1200_c1200x800-0x0.webp",
       second_image:
-        "http://res2.weblium.site/res/5d6521c1b173b6002449a088/5d663b9b5deb290023798066_optimized_1200.webp",
+        "https://res2.weblium.site/res/5d6521c1b173b6002449a088/5d663b9b5deb290023798066_optimized_1200.webp",
       type: "Стандартный",
       size: "15",
       guests: "2",
@@ -37,7 +37,7 @@ export default function Rooms() {
       discription:
         "В наших панорамных номерах можно насладиться красивым видам на склоны горы Эльбрус. Это не забываемый вид и приятные ощущения.",
     },
-  ];
+  ]
 
   return (
     <div className="w-blocks-group-wrapper blocks-group-wrapper_2QF">
@@ -326,5 +326,5 @@ export default function Rooms() {
         </section>
       </div>
     </div>
-  );
+  )
 }
