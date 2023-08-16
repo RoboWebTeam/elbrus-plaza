@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from "react"
+import { Link } from "react-router-dom"
 export default function ContactUs() {
   return (
     <div className="w-blocks-group-wrapper blocks-group-wrapper_2QF">
@@ -159,11 +159,13 @@ export default function ContactUs() {
                       >
                         <span className="w-text-content">
                           <span style={{ fontWeight: "bold" }}>
-                            <u>
-                              +7 (928) 076-79-07
-                              <br />
-                              +7 (926) 086-86-89
-                            </u>
+                            {/* <u> */}
+                            <a href="tel:+79280767907">+7 (928) 076-79-07</a>
+                            {/* +7 (928) 076-79-07 */}
+                            <br />
+                            <a href="tel:+79260868689">+7 (926) 086-86-89</a>
+                            {/* +7 (926) 086-86-89 */}
+                            {/* </u> */}
                           </span>
                         </span>
                       </span>
@@ -222,5 +224,5 @@ export default function ContactUs() {
         </section>
       </div>
     </div>
-  );
+  )
 }

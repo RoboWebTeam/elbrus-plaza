@@ -1,12 +1,12 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import "./headerStyle.css";
+import React, { useState } from "react"
+import { Link } from "react-router-dom"
+import "./headerStyle.css"
 
 export default function Header() {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false)
   const openHamb = () => {
-    setOpen(!open);
-  };
+    setOpen(!open)
+  }
   const headerLinks = [
     {
       name: "О нас",
@@ -28,7 +28,7 @@ export default function Header() {
       name: "Контакты",
       link: "contacts",
     },
-  ];
+  ]
   return (
     <div>
       <div className="headerContainer">
@@ -59,5 +59,5 @@ export default function Header() {
         </div>
       </div>
     </div>
-  );
+  )
 }

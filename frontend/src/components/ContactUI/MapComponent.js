@@ -1,8 +1,13 @@
-import React from "react";
-import "./MapComponents.css";
-import { YMaps, Map, Placemark } from "react-yandex-maps";
+import React from "react"
+import "./MapComponents.css"
+import { YMaps, Map, Placemark } from "react-yandex-maps"
 
 export default function MapComponent() {
+  const handleClick = () => {
+    const yandexNavigatorUrl = `yandexnavi://build_route_on_map?lat_to=43.2492&lon_to=42.631482`
+    console.log(yandexNavigatorUrl)
+    window.location.href = yandexNavigatorUrl
+  }
   return (
     <div className="map_container">
       <div className="map_holder">
@@ -44,6 +49,9 @@ export default function MapComponent() {
                   <br />
                   Балкарская ул., 36А, село Тегенекли
                 </span>
+                <button onClick={handleClick}>
+                  Открыть в Яндекс.Навигаторе
+                </button>
               </span>
             </p>
           </li>
@@ -54,12 +62,14 @@ export default function MapComponent() {
             >
               <span style={{ display: "block" }} className="w-text-block ">
                 <span className="w-text-content">
-                  <span style={{ fontWeight: "bold" }}>+7 (928) 076-79-07</span>
+                  {/* <span style={{ fontWeight: "bold" }}>+7 (928) 076-79-07</span> */}
+                  <a href="tel:+79280767907">+7 (928) 076-79-07</a>
                 </span>
               </span>
               <span style={{ display: "block" }} className="w-text-block ">
                 <span className="w-text-content">
-                  <span style={{ fontWeight: "bold" }}>+7 (926) 086-86-89</span>
+                  {/* <span style={{ fontWeight: "bold" }}>+7 (926) 086-86-89</span> */}
+                  <a href="tel:+79260868689">+7 (926) 086-86-89</a>
                 </span>
               </span>
             </p>
@@ -82,5 +92,5 @@ export default function MapComponent() {
         </ul>
       </div>
     </div>
-  );
+  )
 }

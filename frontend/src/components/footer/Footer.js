@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from "react"
+import { Link } from "react-router-dom"
 
 export default function Footer() {
   return (
@@ -212,7 +212,7 @@ export default function Footer() {
                       <a
                         className="facebook-5c4731926265a30025fe57eb-socials social-icons_icon_3o6 undefined"
                         rel="noopener"
-                        href="https://facebook.com/"
+                        href="https://t.me/elbrusplazahotel"
                         style={{
                           width: "30px",
                           height: "30px",
@@ -260,7 +260,7 @@ export default function Footer() {
                       <a
                         className="instagram-5c4731926265a30025fe57eb-socials social-icons_icon_3o6 undefined"
                         rel="noopener"
-                        href="https://www.instagram.com/p/B1GXlgToAVQ/?igshid=t6j4tj3du9r9"
+                        href="https://instagram.com/elbrusplaza"
                         style={{
                           width: "30px",
                           height: "30px",
@@ -309,7 +309,7 @@ export default function Footer() {
                       <a
                         className="vk-5c4731926265a30025fe57eb-socials social-icons_icon_3o6 undefined"
                         rel="noopener"
-                        href="https://vk.com/"
+                        href="https://vk.com/elbrusplazatop"
                         style={{
                           width: "30px",
                           height: "30px",
@@ -357,7 +357,7 @@ export default function Footer() {
                 >
                   <span className="w-text-block" style={{ display: "block" }}>
                     <span className="w-text-content">
-                      © ELBRUS PLAZA Все права защищены 2019-2022
+                      © ELBRUS PLAZA Все права защищены 2019-2023
                     </span>
                   </span>
                 </p>
@@ -370,12 +370,12 @@ export default function Footer() {
                     <span className="w-text-content">
                       Разработано:{" "}
                       <a
-                        href="https://roboweb.site/"
+                        href="https://elbrusplaza.ru/"
                         target="_self"
                         data-action="external"
                         className="ui-link"
                       >
-                        РОБОВЕБ - by Nekoula Haddad
+                        РОБОВЕБ - Отель Эльбрус Плаза
                       </a>
                     </span>
                   </span>
@@ -386,5 +386,5 @@ export default function Footer() {
         </footer>
       </div>
     </div>
-  );
+  )
 }
