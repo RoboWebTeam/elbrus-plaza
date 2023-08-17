@@ -644,6 +644,15 @@ ul {
   opacity: 1;
 }
 
+.iconTelegram:hover {
+  background-color: white;
+  transition: 0.3s ease;
+}
+
+.iconTelegram:hover .iconTelegram__icon {
+  fill: black;
+}
+
 .noFill_1L9 .logo_2cS {
   fill: currentColor;
   -webkit-transition: 0.3s;
