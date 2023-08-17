@@ -1,22 +1,22 @@
-import React, { useState } from "react";
+import React, { useState } from "react"
 
 export default function Restaurant() {
   const slides = [
     "//res2.weblium.site/res/5d6521c1b173b6002449a088/5d6fb9395682db002347c49c_optimized_1396",
     "//res2.weblium.site/res/5d6521c1b173b6002449a088/5d6fb928c917a00023a8f5fd_optimized_1396_c1396x930-0x0",
     "//res2.weblium.site/res/5d6521c1b173b6002449a088/5d6e2d4f69666100237d3603_optimized_1396_c1396x930-0x0",
-  ];
+  ]
 
-  const [current, setCurrent] = useState(0);
-  const length = slides.length;
+  const [current, setCurrent] = useState(0)
+  const length = slides.length
 
   const nextSlide = () => {
-    setCurrent(current === length - 1 ? 0 : current + 1);
-  };
+    setCurrent(current === length - 1 ? 0 : current + 1)
+  }
 
   const prevSlide = () => {
-    setCurrent(current === 0 ? length - 1 : current - 1);
-  };
+    setCurrent(current === 0 ? length - 1 : current - 1)
+  }
 
   return (
     <div
@@ -96,7 +96,8 @@ export default function Restaurant() {
                       <li className="w-btns-group__item hover-red-background">
                         <a
                           className="button_2W3 w-button ui-button ui-button--secondary-alt-light ui-button--size-md"
-                          href="/"
+                          href="../Menu.pdf"
+                          target="_blank"
                         >
                           <span className="button__border_1J- ui-button__border" />
                           <span className="button__inner_2of">
@@ -283,5 +284,5 @@ export default function Restaurant() {
         </section>
       </div>
     </div>
-  );
+  )
 }
