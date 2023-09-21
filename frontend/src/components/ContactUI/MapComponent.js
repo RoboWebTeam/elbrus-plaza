@@ -77,7 +77,7 @@ export default function MapComponent() {
               <span style={{ display: "block" }} className="w-text-block ">
                 <span className="w-text-content">
                   {/* <span style={{ fontWeight: "bold" }}>+7 (926) 086-86-89</span> */}
-                  <a href="tel:+79260868689">+7 (926) 086-86-89</a>
+                  <a href="tel:+79264121120">+7 (926) 412-11-20</a>
                 </span>
               </span>
             </p>

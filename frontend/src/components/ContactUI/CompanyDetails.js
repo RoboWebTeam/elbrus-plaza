@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 export default function CompanyDetails() {
   return (
@@ -182,7 +182,7 @@ export default function CompanyDetails() {
                               Гость, либо иное лицо в интересах Гостя,
                               направляет в Отель заявку на бронирование по
                               телефону/факсу: +7 (928) 076-79-07 +7 (926)
-                              086-86-89 ,{" "}
+                              412-11-20 ,{" "}
                             </span>
                           </span>
                         </span>
@@ -648,5 +648,5 @@ export default function CompanyDetails() {
         </section>
       </div>
     </div>
-  );
+  )
 }
