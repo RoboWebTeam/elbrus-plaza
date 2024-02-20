@@ -1,24 +1,24 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 import "./assets/contact-form-chunk.view.css";
 import "./assets/core.css";
 //import "./assets/main.css";
+import { Navigate, Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import "./assets/additional.css";
+import "./assets/header.css";
 import "./assets/ssr.css";
 import "./assets/style.css";
-import "./assets/header.css";
-import "./assets/additional.css";
-import Dashboard from "./pages/Dashboard";
 import Footer from "./components/footer/Footer";
 import AboutUs from "./pages/AboutUs";
 import Accommodation from "./pages/Accommodation";
-import Service from "./pages/Service";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
+import Dashboard from "./pages/Dashboard";
 import EditRoom from "./pages/EditRoom";
+import Gallery from "./pages/Gallery";
 import Login from "./pages/Login";
 import Payment from "./pages/Payment";
 import PaymentRecomendation from "./pages/PaymentRecomendation";
+import Service from "./pages/Service";
 function App() {
   const [token, setToken] = useState("");
 
@@ -76,6 +76,10 @@ function App() {
                 element={
                   <PaymentRecomendation token={token} setToken={setToken} />
                 }
+              />
+              <Route
+                path="*"
+                element={<Navigate to="/" replace />}
               />
             </Route>
           </Routes>

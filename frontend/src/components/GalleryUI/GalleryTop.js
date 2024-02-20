@@ -1,7 +1,7 @@
 import React from "react";
 
-export default function GalleryTop({ title, img1, img2, img3 }) {
-  const images = [img1, img2, img3];
+export default function GalleryTop({ title, images }) {
+  // const images = [img1, img2, img3];
   return (
     <div className="w-blocks-group-wrapper blocks-group-wrapper_2QF">
       <div

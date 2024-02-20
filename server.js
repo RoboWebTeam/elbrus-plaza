@@ -16,6 +16,7 @@ mongoose
   .connect(db, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
+    dbName: 'elbrus'
   })
   .then(() => console.log("the database is ready to use ..."))
   .catch((err) => console.log(err));
@@ -25,11 +26,12 @@ app.use("/rooms", roomRoutes);
 app.use("/user", authRoutes);
 app.use("/mail", mailRoutes);
 app.use(express.static("frontend/build"));
+app.use('/static', express.static("static"));
 app.get("*", (req, res) => {
   res.sendFile(path.resolve(__dirname, "frontend", "build", "index.html"));
 });
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 5001;
 
 app.listen(port, () => {
   console.log(`every thing is okk ...${port} ${process.env.NODE_ENV}`);

@@ -80,3 +80,12 @@
     flex-direction: column;
   }
 }
+
+.accommodation-description{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  font-family: Montserrat,sans-serif;
+  font-size: 14px;
+  text-align: center;
+}

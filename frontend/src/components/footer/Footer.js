@@ -386,7 +386,7 @@ export default function Footer() {
                 >
                   <span className="w-text-block" style={{ display: "block" }}>
                     <span className="w-text-content">
-                      © ELBRUS PLAZA Все права защищены 2019-2023
+                      © ELBRUS PLAZA Все права защищены 2019-2024
                     </span>
                   </span>
                 </p>
@@ -404,7 +404,7 @@ export default function Footer() {
                         data-action="external"
                         className="ui-link"
                       >
-                        Отель Эльбрус Плаза
+                        Отель в Приэльбрусье "Эльбрус Плаза"
                       </a>
                     </span>
                   </span>

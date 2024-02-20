@@ -3,7 +3,34 @@ import Header1 from "../components/header/Header1";
 import GalleryTop from "../components/GalleryUI/GalleryTop";
 import GalleryCenter from "../components/GalleryUI/GalleryCenter";
 import LowerHeader from "../components/UI/LowerHeader";
+import { api } from "../api/fetchData";
 export default function Gallery({ token, setToken }) {
+
+  const getFullPathToImage = (imageName, prefix = 'hotels') => {
+    return `${api}/static/${prefix}/${imageName}`
+  }
+
+  const hotelImages = [
+    "https://res2.weblium.site/res/5d6521c1b173b6002449a088/5d6522b07a1f8a0024c2ddb7_optimized.webp",
+    "https://res2.weblium.site/res/5d6521c1b173b6002449a088/5e8ddad15d00590022acc69e_optimized.webp",
+    "https://res2.weblium.site/res/5d6521c1b173b6002449a088/5e8ddb4e722ef3002177cc7d_optimized.webp",
+    getFullPathToImage('elbrus-hotel-billiard-1.jpg'),
+    getFullPathToImage('elbrus-hotel-karaoke-1.jpg'),
+    getFullPathToImage('elbrus-hotel-zal-1.jpg'),
+    getFullPathToImage('elbrus-ploshadka-1.jpg'),
+    getFullPathToImage('elbrus-ploshadka-2.jpg'),
+    getFullPathToImage('elbrus-ploshadka-3.jpg'),
+    getFullPathToImage('elbrus-sauna-1.jpg'),
+    getFullPathToImage('elbrus-sauna-2.jpg'),
+    getFullPathToImage('elbrus-sauna-3.jpg'),
+  ]
+
+  const restorantImages = [
+    "https://res2.weblium.site/res/5d6521c1b173b6002449a088/5d6fb9395682db002347c49c_optimized_1396.webp",
+    "https://res2.weblium.site/res/5d6521c1b173b6002449a088/5d6fb928c917a00023a8f5fd_optimized_1396.webp",
+    "https://res2.weblium.site/res/5d6521c1b173b6002449a088/5d6e2d4f69666100237d3603_optimized_1396.webp",
+  ]
+
   return (
     <React.Fragment>
       <div
@@ -25,16 +52,13 @@ export default function Gallery({ token, setToken }) {
       />
       <GalleryTop
         title="Отель"
-        img1="https://res2.weblium.site/res/5d6521c1b173b6002449a088/5d6522b07a1f8a0024c2ddb7_optimized.webp"
-        img2="https://res2.weblium.site/res/5d6521c1b173b6002449a088/5e8ddad15d00590022acc69e_optimized.webp"
-        img3="https://res2.weblium.site/res/5d6521c1b173b6002449a088/5e8ddb4e722ef3002177cc7d_optimized.webp"
+        images={hotelImages}
       />
       <GalleryCenter />
       <GalleryTop
         title="Ресторан"
-        img1="https://res2.weblium.site/res/5d6521c1b173b6002449a088/5d6fb9395682db002347c49c_optimized_1396.webp"
-        img2="https://res2.weblium.site/res/5d6521c1b173b6002449a088/5d6fb928c917a00023a8f5fd_optimized_1396.webp"
-        img3="https://res2.weblium.site/res/5d6521c1b173b6002449a088/5d6e2d4f69666100237d3603_optimized_1396.webp"
+        images={restorantImages}
+
       />
     </React.Fragment>
   );

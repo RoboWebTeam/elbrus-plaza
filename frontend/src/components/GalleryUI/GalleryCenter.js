@@ -1,6 +1,12 @@
 import React from "react";
+import { api } from "../../api/fetchData";
 
 export default function GalleryCenter() {
+
+  const getFullPathToImage = (imageName, prefix = 'rooms') => {
+    return `${api}/static/${prefix}/${imageName}`
+  }
+
   return (
     <div className="w-blocks-group-wrapper blocks-group-wrapper_2QF">
       <div
@@ -89,6 +95,7 @@ export default function GalleryCenter() {
                       </div>
                     </div>
                   </div>
+                  {/* image */}
                   <div className="w-grid__item w-grid__item--top w-text-center">
                     <div className="w-grid__item-inner w-088754deb0dd8820b733e12d9894218e w-grid__item-panel">
                       <div className="w-picture-wrapper media-wrapper_3VN">
@@ -115,6 +122,8 @@ export default function GalleryCenter() {
                       </div>
                     </div>
                   </div>
+
+                  {/* image */}
                   <div className="w-grid__item w-grid__item--top w-text-center">
                     <div className="w-grid__item-inner w-088754deb0dd8820b733e12d9894218e w-grid__item-panel">
                       <div className="w-picture-wrapper media-wrapper_3VN">
@@ -141,6 +150,8 @@ export default function GalleryCenter() {
                       </div>
                     </div>
                   </div>
+
+                  {/* image */}
                   <div className="w-grid__item w-grid__item--top w-text-center">
                     <div className="w-grid__item-inner w-088754deb0dd8820b733e12d9894218e w-grid__item-panel">
                       <div className="w-picture-wrapper media-wrapper_3VN">
@@ -167,6 +178,8 @@ export default function GalleryCenter() {
                       </div>
                     </div>
                   </div>
+
+                  {/* image */}
                   <div className="w-grid__item w-grid__item--top w-text-center">
                     <div className="w-grid__item-inner w-088754deb0dd8820b733e12d9894218e w-grid__item-panel">
                       <div className="w-picture-wrapper media-wrapper_3VN">
@@ -193,6 +206,8 @@ export default function GalleryCenter() {
                       </div>
                     </div>
                   </div>
+
+                  {/* image */}
                   <div className="w-grid__item w-grid__item--top w-text-center">
                     <div className="w-grid__item-inner w-088754deb0dd8820b733e12d9894218e w-grid__item-panel">
                       <div className="w-picture-wrapper media-wrapper_3VN">
@@ -214,6 +229,175 @@ export default function GalleryCenter() {
                               fontFamily: "object-fit: cover",
                             }}
                             src="//res2.weblium.site/res/5d6521c1b173b6002449a088/5e8ddb2f1f7c890021e81370_optimized.webp"
+                          />
+                        </picture>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* image */}
+                  <div className="w-grid__item w-grid__item--top w-text-center">
+                    <div className="w-grid__item-inner w-088754deb0dd8820b733e12d9894218e w-grid__item-panel">
+                      <div className="w-picture-wrapper media-wrapper_3VN">
+                        <picture
+                          className="w-picture ui-picture_2i5"
+                          style={{ paddingTop: "63.24%" }}
+                          data-component="picture"
+                          data-images="[]"
+                          data-fallbackurl={getFullPathToImage('elbrus-kottedg-1.jpg')}
+                          data-was-processed="true"
+                          data-loaded="true"
+                        >
+                          <img
+                            alt="Illustration"
+                            data-fallback-url={getFullPathToImage('elbrus-kottedg-1.jpg')}
+                            className="w-picture__image ui-image_3aJ"
+                            style={{
+                              objectFit: "cover",
+                              fontFamily: "object-fit: cover",
+                            }}
+                            src={getFullPathToImage('elbrus-kottedg-1.jpg')}
+                          />
+                        </picture>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* image */}
+                  <div className="w-grid__item w-grid__item--top w-text-center">
+                    <div className="w-grid__item-inner w-088754deb0dd8820b733e12d9894218e w-grid__item-panel">
+                      <div className="w-picture-wrapper media-wrapper_3VN">
+                        <picture
+                          className="w-picture ui-picture_2i5"
+                          style={{ paddingTop: "63.24%" }}
+                          data-component="picture"
+                          data-images="[]"
+                          data-fallbackurl={getFullPathToImage('elbrus-kottedg-2.jpg')}
+                          data-was-processed="true"
+                          data-loaded="true"
+                        >
+                          <img
+                            alt="Illustration"
+                            data-fallback-url={getFullPathToImage('elbrus-kottedg-2.jpg')}
+                            className="w-picture__image ui-image_3aJ"
+                            style={{
+                              objectFit: "cover",
+                              fontFamily: "object-fit: cover",
+                            }}
+                            src={getFullPathToImage('elbrus-kottedg-2.jpg')}
+                          />
+                        </picture>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* image */}
+                  <div className="w-grid__item w-grid__item--top w-text-center">
+                    <div className="w-grid__item-inner w-088754deb0dd8820b733e12d9894218e w-grid__item-panel">
+                      <div className="w-picture-wrapper media-wrapper_3VN">
+                        <picture
+                          className="w-picture ui-picture_2i5"
+                          style={{ paddingTop: "63.24%" }}
+                          data-component="picture"
+                          data-images="[]"
+                          data-fallbackurl={getFullPathToImage('elbrus-kottedg-3.jpg')}
+                          data-was-processed="true"
+                          data-loaded="true"
+                        >
+                          <img
+                            alt="Illustration"
+                            data-fallback-url={getFullPathToImage('elbrus-kottedg-3.jpg')}
+                            className="w-picture__image ui-image_3aJ"
+                            style={{
+                              objectFit: "cover",
+                              fontFamily: "object-fit: cover",
+                            }}
+                            src={getFullPathToImage('elbrus-kottedg-3.jpg')}
+                          />
+                        </picture>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* image */}
+                  <div className="w-grid__item w-grid__item--top w-text-center">
+                    <div className="w-grid__item-inner w-088754deb0dd8820b733e12d9894218e w-grid__item-panel">
+                      <div className="w-picture-wrapper media-wrapper_3VN">
+                        <picture
+                          className="w-picture ui-picture_2i5"
+                          style={{ paddingTop: "63.24%" }}
+                          data-component="picture"
+                          data-images="[]"
+                          data-fallbackurl={getFullPathToImage('elbrus-kottedg-4.jpg')}
+                          data-was-processed="true"
+                          data-loaded="true"
+                        >
+                          <img
+                            alt="Illustration"
+                            data-fallback-url={getFullPathToImage('elbrus-kottedg-4.jpg')}
+                            className="w-picture__image ui-image_3aJ"
+                            style={{
+                              objectFit: "cover",
+                              fontFamily: "object-fit: cover",
+                            }}
+                            src={getFullPathToImage('elbrus-kottedg-4.jpg')}
+                          />
+                        </picture>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* image */}
+                  <div className="w-grid__item w-grid__item--top w-text-center">
+                    <div className="w-grid__item-inner w-088754deb0dd8820b733e12d9894218e w-grid__item-panel">
+                      <div className="w-picture-wrapper media-wrapper_3VN">
+                        <picture
+                          className="w-picture ui-picture_2i5"
+                          style={{ paddingTop: "63.24%" }}
+                          data-component="picture"
+                          data-images="[]"
+                          data-fallbackurl={getFullPathToImage('elbrus-kottedg-5.jpg')}
+                          data-was-processed="true"
+                          data-loaded="true"
+                        >
+                          <img
+                            alt="Illustration"
+                            data-fallback-url={getFullPathToImage('elbrus-kottedg-5.jpg')}
+                            className="w-picture__image ui-image_3aJ"
+                            style={{
+                              objectFit: "cover",
+                              fontFamily: "object-fit: cover",
+                            }}
+                            src={getFullPathToImage('elbrus-kottedg-5.jpg')}
+                          />
+                        </picture>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  {/* image */}
+                  <div className="w-grid__item w-grid__item--top w-text-center">
+                    <div className="w-grid__item-inner w-088754deb0dd8820b733e12d9894218e w-grid__item-panel">
+                      <div className="w-picture-wrapper media-wrapper_3VN">
+                        <picture
+                          className="w-picture ui-picture_2i5"
+                          style={{ paddingTop: "63.24%" }}
+                          data-component="picture"
+                          data-images="[]"
+                          data-fallbackurl={getFullPathToImage('elbrus-kottedg-6.jpg')}
+                          data-was-processed="true"
+                          data-loaded="true"
+                        >
+                          <img
+                            alt="Illustration"
+                            data-fallback-url={getFullPathToImage('elbrus-kottedg-6.jpg')}
+                            className="w-picture__image ui-image_3aJ"
+                            style={{
+                              objectFit: "cover",
+                              fontFamily: "object-fit: cover",
+                            }}
+                            src={getFullPathToImage('elbrus-kottedg-6.jpg')}
                           />
                         </picture>
                       </div>

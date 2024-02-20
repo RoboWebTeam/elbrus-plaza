@@ -26,6 +26,12 @@ export default function Accommodation({ token, setToken }) {
       />
       <Information />
       <Rooms token={token} />
+      <div className="accommodation-description">
+        <span>
+          В праздничные дни стоимость номеров и коттеджа может отличаться. Просьба уточнять у
+          Администратора по тел. +7 (928) 076-79-07
+        </span>
+      </div>
     </React.Fragment>
   );
 }

@@ -2,13 +2,33 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 import { ReactComponent as EditSVG } from "../../assets/svgs/Edit.svg";
-import { fetchData } from "../../api/fetchData";
+import { api, fetchData } from "../../api/fetchData";
 
 export default function Rooms({ token }) {
   const [rooms, setRooms] = useState([]);
 
+  const getRooms = async () => {
+    const res = await fetchData()
+    const rooms = res.map(room => {
+      let first_image = room.first_image
+      let second_image = room.second_image
+
+      if (first_image && first_image?.includes('/static/')) {
+        room.first_image = `${api}${first_image}`
+      }
+
+      if (second_image && second_image?.includes('/static/')) {
+        room.second_image = `${api}${second_image}`
+      }
+
+      return room
+    })
+
+    setRooms(rooms)
+  }
+
   useEffect(() => {
-    fetchData().then((response) => setRooms(response));
+    getRooms()
   }, []);
 
   return (

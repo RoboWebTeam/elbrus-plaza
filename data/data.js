@@ -4,7 +4,7 @@ const rooms = [
       "https://res2.weblium.site/res/5d6521c1b173b6002449a088/5d665af07f01fb0024a815e8_optimized_1200.webp",
     second_image:
       "https://res2.weblium.site/res/5d6521c1b173b6002449a088/5d665b367a1f8a0024c59ca8_optimized_1200.webp",
-    type: "Стандартный",
+    type: "Стандартный 1",
     size: "15",
     guests: "2",
     price: { old: "6.500", new: "5.000" },
