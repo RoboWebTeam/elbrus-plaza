@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "react-router-dom"
+import youtubeIcon from '../../assets/svgs/youtube.svg'
 
 export default function Footer() {
   return (
@@ -371,6 +372,29 @@ export default function Footer() {
                             />
                           </g>
                         </svg>
+                      </a>
+                    </li>
+
+                    <li
+                      className="social-icons_3iz"
+                      style={{
+                        marginRight: "7.5px",
+                        marginLeft: "7.5px",
+                        marginBottom: "15px",
+                      }}
+                    >
+                      <a
+                        className="vk-5c4731926265a30025fe57eb-socials social-icons_icon_3o6 undefined"
+                        rel="noopener"
+                        href="https://www.youtube.com/@ElbrusPlaza"
+                        style={{
+                          width: "30px",
+                          height: "30px",
+                          color: "#e6e6e6",
+                          opacity: 1,
+                        }}
+                      >
+                        <img src={youtubeIcon}></img>
                       </a>
                     </li>
                   </ul>
