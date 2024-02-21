@@ -5,9 +5,19 @@ import Header1 from "../components/header/Header1";
 import ContactUs from "../components/ContactUI/ContactUs";
 import CompanyDetails from "../components/ContactUI/CompanyDetails";
 import MapComponent from "../components/ContactUI/MapComponent";
+import { Helmet } from "react-helmet";
+
 export default function Contact({ token, setToken }) {
   return (
     <React.Fragment>
+      <Helmet>
+        <title>Контакты | Отель «Эльбрус Плаза»</title>
+        <meta
+          name="description"
+          content="Контакты и схема проезда к отелю «Эльбрус Плаза» в Приэльбрусье. Адрес: Балкарская ул., 36А, село Тегенекли. Тел.: +7 (928) 076-79-07, +7 (926) 412-11-20. Почта: elbrusplaza@gmail.com"
+        />
+      </Helmet>
+
       <div
         id="portal"
         className="g-sticky-wrapper sticky-wrapper_6A4"

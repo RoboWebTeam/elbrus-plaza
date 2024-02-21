@@ -5,9 +5,19 @@ import VideoSection from "../components/ServiceUI/VideoSection";
 import Services from "../components/DashboardUI/Services";
 import OtherServices from "../components/DashboardUI/OtherServices";
 import RoomView from "../components/DashboardUI/RoomView";
+import { Helmet } from "react-helmet";
+
 export default function Service({ token, setToken }) {
   return (
     <React.Fragment>
+      <Helmet>
+        <title>Сервис | Отель «Эльбрус Плаза»</title>
+        <meta
+          name="description"
+          content="Ресторан, фитнес, бильярд, сауна, караоке и другие развлечения в отеле «Эльбрус Плаза» в Приэльбрусье."
+        />
+      </Helmet>
+
       <div
         id="portal"
         className="g-sticky-wrapper sticky-wrapper_6A4"

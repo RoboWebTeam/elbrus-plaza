@@ -1,12 +1,21 @@
-import React, { useState, useEffect } from "react";
-import LowerHeader from "../components/UI/LowerHeader";
+import React from "react";
+import { Helmet } from "react-helmet";
 import Information from "../components/AccommodationUI/Information";
-import Header1 from "../components/header/Header1";
 import Rooms from "../components/AccommodationUI/Rooms";
+import LowerHeader from "../components/UI/LowerHeader";
+import Header1 from "../components/header/Header1";
 
 export default function Accommodation({ token, setToken }) {
   return (
     <React.Fragment>
+      <Helmet>
+        <title>Номера | Отель «Эльбрус Плаза»</title>
+        <meta
+          name="description"
+          content="Выберите свой роскошный номер или коттедж. Отель Elbrus Plaza предлагает своим гостям природу роскоши, уюта и полного расслабления для хороших воспоминай"
+        />
+      </Helmet>
+
       <div
         id="portal"
         className="g-sticky-wrapper sticky-wrapper_6A4"

@@ -1,13 +1,25 @@
 import React from "react";
-import "./About.css";
+import { Helmet } from 'react-helmet';
+import ContactUs from "../components/AboutUsUI/ContactUs";
+import GalleryAboutUs from "../components/AboutUsUI/GalleryAboutUs";
+import HotelPhotos from "../components/AboutUsUI/HotelPhotos";
 import LowerHeader from "../components/UI/LowerHeader";
 import Header1 from "../components/header/Header1";
-import HotelPhotos from "../components/AboutUsUI/HotelPhotos";
-import GalleryAboutUs from "../components/AboutUsUI/GalleryAboutUs";
-import ContactUs from "../components/AboutUsUI/ContactUs";
+import "./About.css";
+
 export default function AboutUs({ token, setToken }) {
+
+
   return (
     <React.Fragment>
+      <Helmet>
+        <title>О нас | Отель «Эльбрус Плаза»</title>
+        <meta
+          name="description"
+          content="Гостиничный комплекс «ELBRUS PLAZA» построен в 2018 году и находится в окружении соснового бора национального парка «Приэльбрусье» в живописной Баксанской долине."
+        />
+      </Helmet>
+
       <div
         id="portal"
         className="g-sticky-wrapper sticky-wrapper_6A4"

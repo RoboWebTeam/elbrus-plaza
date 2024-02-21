@@ -4,6 +4,7 @@ import GalleryTop from "../components/GalleryUI/GalleryTop";
 import GalleryCenter from "../components/GalleryUI/GalleryCenter";
 import LowerHeader from "../components/UI/LowerHeader";
 import { api } from "../api/fetchData";
+import { Helmet } from "react-helmet";
 export default function Gallery({ token, setToken }) {
 
   const getFullPathToImage = (imageName, prefix = 'hotels') => {
@@ -33,6 +34,14 @@ export default function Gallery({ token, setToken }) {
 
   return (
     <React.Fragment>
+      <Helmet>
+        <title>Фотогалерея | Отель «Эльбрус Плаза»</title>
+        <meta
+          name="description"
+          content="Фотогалерея с номерами и территории отеля «Эльбрус Плаза» в Приэльбрусье."
+        />
+      </Helmet>
+
       <div
         id="portal"
         className="g-sticky-wrapper sticky-wrapper_6A4"
